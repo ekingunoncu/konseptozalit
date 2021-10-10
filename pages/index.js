@@ -114,7 +114,6 @@ export default function IndexPage({blueprintPrices, aydingerPrices, kraftPrices,
                 <Tabs
                     value={value}
                     onChange={handleChange}
-                    textColor="black"
                     className={styles.tabs}
                     TabIndicatorProps={{
                         style: {
@@ -144,6 +143,7 @@ export default function IndexPage({blueprintPrices, aydingerPrices, kraftPrices,
                             <TableBody>
                                 {blueprintPrices.map((price) => (
                                     <TableRow
+                                        key={price.size}
                                         sx={{'&:last-child td, &:last-child th': {border: 0}}}
                                     >
                                         <TableCell className={styles.bank_font_center}
@@ -173,6 +173,7 @@ export default function IndexPage({blueprintPrices, aydingerPrices, kraftPrices,
                             <TableBody>
                                 {aydingerPrices.map((price) => (
                                     <TableRow
+                                        key={price.size}
                                         sx={{'&:last-child td, &:last-child th': {border: 0}}}
                                     >
                                         <TableCell className={styles.bank_font_center}
@@ -198,6 +199,7 @@ export default function IndexPage({blueprintPrices, aydingerPrices, kraftPrices,
                             <TableBody>
                                 {kraftPrices.map((price) => (
                                     <TableRow
+                                        key={price.size}
                                         sx={{'&:last-child td, &:last-child th': {border: 0}}}
                                     >
                                         <TableCell className={styles.bank_font_center}
@@ -223,6 +225,7 @@ export default function IndexPage({blueprintPrices, aydingerPrices, kraftPrices,
                             <TableBody>
                                 {bindingPrices.map((price) => (
                                     <TableRow
+                                        key={price.size}
                                         sx={{'&:last-child td, &:last-child th': {border: 0}}}
                                     >
                                         <TableCell className={styles.bank_font_center}
@@ -265,9 +268,6 @@ export default function IndexPage({blueprintPrices, aydingerPrices, kraftPrices,
                         </svg>
 
                     </div>
-                    <p className={styles.bank_font_center} style={{marginTop: '20px'}}>
-                        KONSEPTOZALİT@GMAİL.COM
-                    </p>
                     <p className={styles.bank_font_center}>
                         MAIL :
                     </p>

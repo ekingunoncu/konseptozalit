@@ -1,0 +1,32 @@
+.bank_font_center {
+    text-align: center;
+    font-family: bankgotm, serif;
+}
+
+.category {
+
+}
+
+.tabs_container {
+    display: flex;
+    align-items: center;
+}
+
+.tabs {
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "bankgotm";
+    src: local("bankgotm"),
+    url("../fonts/bankgotm.ttf") format("truetype");
+}
+
+.no_display {
+    display: none;
+}
+
+.message {
+    width: 100%;
+    margin-top: 20px !important;
+}
